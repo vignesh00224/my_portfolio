@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
 }
-
+/*
 .navbar {
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
+}*/
+
+.navbar {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
 }
 
 .nav-menu {
@@ -551,7 +558,7 @@ body {
 /* About html css */
 .container {
     max-width: 1400px;
-    margin: auto;
+    margin :70px 500px ;
     padding: 10px 10px;
     background: linear-gradient(
         135deg,
