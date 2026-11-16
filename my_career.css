@@ -327,6 +327,138 @@ a {
 }
 
 
+/* =================================
+   HOME PAGE FOOTER
+================================= */
+
+.main-footer {
+    margin-top: 80px;
+    padding: 45px 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(35, 20, 65, 0.95),
+        rgba(8, 25, 55, 0.95)
+    );
+
+    border-top: 1px solid rgba(168, 85, 247, 0.6);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 35px;
+}
+
+.footer-brand h2 {
+    color: #c084fc;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.footer-brand h4 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    color: #aebbd0;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #b8c4d9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #c084fc;
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Mobile Footer */
+
+@media (max-width: 768px) {
+
+    .main-footer {
+        padding: 35px 20px 20px;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        line-height: 1.6;
+    }
+}
+
+
 /* =========================================
    CONTACT PAGE - EXISTING CONTACT CARDS
 ========================================= */
@@ -582,11 +714,12 @@ a {
 }
 
 .tech-stack span {
-    background: #292929;
+    background-color:  #5558fc;
     color: #ddd;
     padding: 7px 10px;
     border-radius: 6px;
     font-size: 11px;
+
 }
 
 .project-footer {
