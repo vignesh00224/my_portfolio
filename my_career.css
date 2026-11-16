@@ -63,6 +63,38 @@ a {
     transition: 0.3s ease;
 }
 
+.logo {
+    cursor: pointer;
+    user-select: none;
+    font-size: 30px;
+}
+
+.secret-message {
+    position: fixed;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%) translateY(20px);
+    background: linear-gradient(135deg, #54258e, #173e83);
+    color: white;
+    padding: 16px 25px;
+    border: 1px solid #a855f7;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+    z-index: 9999;
+    text-align: center;
+    width: max-content;
+    max-width: 90%;
+    font-size: 28px;
+}
+
+.secret-message.show {
+    opacity: 2;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
 
 /* =========================================
    NAVIGATION
